@@ -50,6 +50,7 @@ const Shipping = ({ history }) => {
                                 placeholder='address'
                                 value={address}
                                 onChange={(e) => setAddress(e.target.value)}
+                                required
                             />
 
                             <div className='shipping--container__input_field--form__text' >
@@ -62,6 +63,7 @@ const Shipping = ({ history }) => {
                                 placeholder='city'
                                 value={city}
                                 onChange={(e) => setCity(e.target.value)}
+                                required
                             />
 
                             <div className='shipping--container__input_field--form__text' >
@@ -74,6 +76,7 @@ const Shipping = ({ history }) => {
                                 placeholder='phone number '
                                 value={phoneNo}
                                 onChange={(e) => setPhoneNo(e.target.value)}
+                                required
                             />
 
                             <div className='shipping--container__input_field--form__text' >
@@ -86,6 +89,7 @@ const Shipping = ({ history }) => {
                                 placeholder='postal pode'
                                 value={postalCode}
                                 onChange={(e) => setPostalCode(e.target.value)}
+                                required
                             />
 
                             <div className='shipping--container__input_field--form__text' >
