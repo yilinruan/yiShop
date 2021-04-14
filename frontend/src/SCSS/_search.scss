@@ -1,0 +1,54 @@
+@import "./variables";
+
+.search {
+    position: relative;
+    width: 28rem;
+    height: 3rem;
+    border: 2px solid $color-black;
+    // border-radius: 10rem;
+    outline: none;
+    padding-left: 2rem;
+
+    @include lg {
+        width: 25rem;
+    }
+
+    @include md {
+        width: 20rem;
+    }
+
+    @include sm {
+        width: 15rem;
+    }
+
+    &::placeholder {
+        font-size: 1.5rem;
+    }
+
+    &:focus {
+        border: 2px solid $color-blue-light;
+        padding-left: 2rem;
+        transition: all 0.4s;
+
+        &::placeholder {
+            color: $color-transparent;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        height: 3rem;
+        width: 3rem;
+        cursor: pointer;
+
+        &:hover {
+            color: $color-grey-dark;
+            transition: all 0.15s;
+        }
+
+        &:active {
+            color: $color-blue-light;
+            transform: translateY(0.15rem);
+        }
+    }
+}

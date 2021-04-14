@@ -1,0 +1,104 @@
+@import "./variables";
+
+.footer {
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    flex-direction: column;
+
+    &-container {
+        position: relative;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid white;
+        margin: 0 auto;
+        font-size: 1.3rem;
+        width: 80%;
+
+        &-top {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+            justify-items: center;
+
+            &__section {
+                display: flex;
+                flex-direction: column;
+                color: rgb(194, 194, 194);
+                text-decoration: none;
+                margin: 2rem 2rem 0 2rem;
+
+                &--title {
+                    padding-bottom: 1rem;
+                    font-size: 1.5rem;
+                }
+
+                &--text {
+                    color: $color-blue-light;
+                    padding-bottom: 1rem;
+
+                }
+
+                &--icons {
+                    display: flex;
+                    font-size: 2rem;
+    
+                    &-facebook {
+                        color: rgb(56, 74, 237);
+                        margin-right: 1.5rem;
+                        &:hover {
+                            transition: all 0.3s ease-out;
+                            color: #201dd3;
+                            transition: 250ms;
+                        }
+                    }
+    
+                    &-twitter {
+                        color: rgb(0, 130, 252);
+                        margin-right: 1.5rem;
+                        &:hover {
+                            transition: all 0.3s ease-out;
+                            color: #5855f7;
+                            transition: 250ms;
+                        }
+                    }
+    
+                    &-github {
+                        color: rgb(223, 17, 171);
+                        margin-right: 1.5rem;
+                        &:hover {
+                            transition: all 0.3s ease-out;
+                            color: #df4d17;
+                            transition: 250ms;
+                        }
+                    }
+    
+                    &-linkedin {
+                        color: rgb(215, 243, 29);
+                        &:hover {
+                            transition: all 0.3s ease-out;
+                            color: #84d31d;
+                            transition: 250ms;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    &-container2 {
+        position: relative;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        &-top {
+            width: 100%;
+            // justify-content: space-between;
+
+            &-copyright {
+                color: white;
+                font-size: 1.5rem;
+            }
+
+          
+        }
+    }
+}

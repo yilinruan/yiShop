@@ -1,0 +1,157 @@
+@import "./variables";
+
+.orderDetails {
+    min-height: 88vh;
+    padding-top: 14rem;
+    position: relative;
+
+    &--container {
+        left: 70%;
+        width: 70%;
+        padding-bottom: 5rem;
+
+        @include lg {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &__title {
+            width: 80%;
+            font-size: 2.7rem;
+            font-weight: 600;
+            margin: 0 auto;
+            padding-bottom: 2rem;
+        }
+
+        &__title_down {
+            width: 80%;
+            font-size: 2rem;
+            margin: 0 auto;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba($color-grey-dark, 0.3);
+        }
+
+        &__title_top {
+            width: 80%;
+            font-size: 2rem;
+            margin: 0 auto;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            border-top: 1px solid rgba($color-grey-dark, 0.3);
+        }
+
+        &__text_green {
+            width: 75%;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0 auto;
+            color: green;
+            padding-bottom: 1rem;
+        }
+
+        &__text_red {
+            width: 75%;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0 auto;
+            color: red;
+            padding-bottom: 1rem;
+        }
+
+        &__shipping_detail {
+            display: flex;
+            width: 75%;
+            margin: 0 auto;
+            padding-bottom: 1rem;
+
+            &--title {
+                width: 9rem;
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
+            &--text {
+                width: 80%;
+                font-size: 1.4rem;
+            }
+        }
+
+        &__order {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+
+            &--items {
+                display: flex;
+                height: 10rem;
+                width: 80%;
+                margin: 0 auto;
+                border-top: 1px solid rgba($color-grey-dark, 0.3);
+                border-bottom: 1px solid rgba($color-grey-dark, 0.3);
+
+                &__image {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 0 auto;
+                    width: 15%;
+
+                    &--size {
+                        height: 5rem;
+                        width: 5rem;
+                    }
+
+                    @include lg {
+                        width: 20%;
+                    }
+                }
+
+                &__name {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: left;
+                    margin: 0 auto;
+                    height: 90%;
+                    width: 58%;
+                    font-size: 1.3rem;
+                    color: $color-black;
+
+                    @include lg {
+                        width: 50%;
+                    }
+                }
+
+                &__quantity {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    font-size: 1.3rem;
+                    text-align: center;
+                    width: 13%;
+                    color: rgba($color-blue-light, 1);
+                    font-weight: 600;
+
+                    @include lg {
+                        width: 12%;
+                    }
+                }
+
+                &__price {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    font-size: 1.3rem;
+                    text-align: center;
+                    width: 13%;
+                    color: rgba($color-blue-light, 1);
+                    font-weight: 600;
+
+                    @include lg {
+                        width: 12%;
+                    }
+                }
+            }
+        }
+    }
+}

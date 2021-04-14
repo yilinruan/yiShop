@@ -1,0 +1,41 @@
+@import "./variables";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    @include lg {
+        font-size: 58%;
+    }
+    @include md {
+        font-size: 53%;
+    }
+    @include sm {
+        font-size: 51%;
+    }
+    min-width: 490px;
+    height: -webkit-fill-available;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 23rem);
+}

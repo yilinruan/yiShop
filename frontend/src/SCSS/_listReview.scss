@@ -1,0 +1,38 @@
+@import "./variables";
+
+.listReview{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10rem;
+    &--title{
+        font-size: 2.5rem;
+        font-weight: 600;
+        padding-bottom: 1rem;
+    }
+
+    &--review_area{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+
+        &__container{
+            border-top: 1px solid rgba($color-grey-dark, 0.2);
+            border-bottom: 1px solid rgba($color-grey-dark, 0.2);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+            &--user{
+                font-size: 1.1rem;
+                color: rgba(black, 0.7);
+                padding-left: 0.5rem;
+            }
+
+            &--comment{
+                font-size: 1.4rem;
+                padding-top: 1.5rem;
+                padding-left: 0.5rem;
+            }
+        }
+    }
+
+}

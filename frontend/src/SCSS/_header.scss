@@ -1,0 +1,245 @@
+@import "./variables";
+
+.header {
+    display: flex;
+    position: fixed;
+
+    justify-content: space-between;
+    width: 100%;
+    height: 7rem;
+    align-items: center;
+    box-shadow: 0 0.3rem 0.6rem rgba($color-black, 0.15);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #ededed;
+    z-index: 10;
+
+    &__left {
+        width: 25%;
+        padding-left: 2.5rem;
+
+        &--image {
+            width: 40%;
+            padding: 5%;
+            display: flex;
+            cursor: pointer;
+
+            @include lg {
+                width: 65%;
+                padding: 8%;
+            }
+            @include md {
+                width: 80%;
+            }
+            @include sm {
+                width: 85%;
+            }
+        }
+    }
+
+    &__center {
+        display: flex;
+        width: 45%;
+        justify-content: center;
+    }
+
+    &__right {
+        display: flex;
+        width: 30%;
+        justify-content: flex-end;
+        padding-right: 4rem;
+
+        &--menu {
+            display: flex;
+            height: 100%;
+            width: 3rem;
+            justify-content: center;
+
+            &__user_icon {
+                height: 3rem;
+                width: 2rem;
+                color: rgba($color-black, 1);
+
+            }
+
+         
+            // &:hover > &__expand {
+            //     visibility: visible;
+            //     height: auto;
+            //     opacity: 1;
+            // }
+
+            &__expand {
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                width: 20rem;
+
+                // visibility: hidden;
+                // height: 0;
+                // opacity: 0;
+
+                opacity: 1;
+                visibility: visible;
+
+                border: 1px solid rgba($color-grey-dark, 0.3);
+                border-radius: 0.5rem;
+                background-color: $color-white;
+                transition: opacity 0.4s;
+                padding-top: 1rem;
+                margin-top: 3rem;
+                margin-right: 10rem;
+                z-index: 200;
+
+                &--profile {
+                    display: flex;
+                    height: 5rem;
+                    border-bottom: 1px solid rgba($color-grey-dark, 0.3);
+                    padding-left: 1rem;
+
+                    &__image {
+                        width: 25%;
+                        height: 3.5rem;
+                        width: 3.5rem;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+
+                    &__user {
+                        display: flex;
+                        flex-direction: column;
+                        height: 4rem;
+                        width: 75%;
+                        text-align: left;
+                        margin-left: 1rem;
+
+                        &--name {
+                            color: $color-black;
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                        }
+
+                        &--email {
+                            color: $color-black;
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                &--links {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    &--text {
+                        display: flex;
+                        flex-direction: column;
+                        height: 3rem;
+                        width: 100%;
+                        text-decoration: none;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        color: $color-purple-light;
+                        text-align: left;
+                        justify-content: center;
+                        padding-left: 1.5rem;
+
+                        &:hover {
+                            color: $color-purple-dark;
+                            text-decoration: none;
+                            background-color: rgba($color-purple-light, 0.1);
+                        }
+
+                        &__sign_out {
+                            font-size: 1.3rem;
+                            color: rgba(red, 0.65);
+                            cursor: pointer;
+                            text-decoration: none !important;
+
+                            &:hover {
+                                color: rgba(red, 1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &--login_area {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-decoration: none !important;
+            :focus {
+                outline: none;
+            }
+            &__button {
+                height: 3rem;
+                width: 6rem;
+                color: #f7f7f7;
+                background-color: #1dace3;
+                font-weight: 600;
+                font-size: 1.3rem;
+                border-radius: 1.5rem;
+                border: none;
+                transition: all 0.4s;
+
+                &:hover {
+                    color: $color-white;
+                    background-color: $color-purple-light;
+                }
+            }
+        }
+
+        &--cart {
+            display: inline-flex;
+            justify-content: center;
+            text-align: center;
+            margin-right: 1.7rem;
+            height: 3rem;
+            width: 8rem;
+
+            &__icon {
+                // margin-right: 1.6rem;
+                display: inline-flex;
+                height: 3rem;
+                width: 3rem;
+                color: rgba(#333300, 1);
+                cursor: pointer;
+
+                &:hover {
+                    color: $color-grey-dark;
+                    transition: all 0.4s;
+                }
+
+                &:active {
+                    color: $color-blue-light;
+                    transform: translateX(0.1rem);
+                }
+            }
+
+            &__in_cart_number{
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                font-size: 1.7rem;
+                font-weight: 600;
+                height: 2.5rem;
+                width: 2.5rem;
+                color: $color-blue-dark;
+                border-radius: 0.5rem;
+                background-color: rgba(orange, 0.5);
+                overflow-x: hidden;
+                overflow-y: hidden;
+                cursor: pointer;
+
+                &:hover {
+                    color: black;
+                    text-decoration: none !important;
+                }
+            }
+        }
+    }
+}
