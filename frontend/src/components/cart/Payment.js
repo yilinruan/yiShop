@@ -130,7 +130,7 @@ const Payment = ({ history }) => {
                     <div className='payment--container__input_field'>
 
                         {/* <form className='payment--container__input_field--form'> */}
-                        <form className='payment--container__input_field--form' onClick={submitHandler} >
+                        <form className='payment--container__input_field--form' onSubmit={submitHandler} >
 
                             <div className='payment--container__input_field--form__text' >
                                 Card Number
