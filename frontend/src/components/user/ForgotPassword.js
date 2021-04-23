@@ -25,7 +25,6 @@ const ForgotPassword = ({ history }) => {
 
         if (message) {
             alert.success(message)
-
             history.push('/me')
 
         }
