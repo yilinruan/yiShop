@@ -11,7 +11,6 @@
     "axios": "^0.21.1",
     "countries-list": "^2.6.1",
     "mdbreact": "^5.0.1",
-    "node-sass": "^5.0.0",
     "npm-watch": "^0.7.0",
     "rc-dropdown": "^3.2.0",
     "rc-menu": "^8.10.6",
@@ -40,11 +39,12 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "scss": "node-sass --watch src/SCSS/main.scss -o src/styles",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "scss": "sass --watch src/SCSS/main.scss:src/styles/main.css",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "vip": "concurrently --kill-others \"npm start\" \"npm run scss\""
   },
   "eslintConfig": {
     "extends": [

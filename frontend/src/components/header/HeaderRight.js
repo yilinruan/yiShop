@@ -103,12 +103,12 @@ const HeaderRight = () => {
                 </div>
 
                 <div className='header__right--menu__expand--links'>
-{/* 
+                  
                   {user && user.role === 'admin' && (
                     <Link className='header__right--menu__expand--links--text' to='/dashboard' >
                       Dashboard
                     </Link>
-                  )} */}
+                  )}
 
                   <Link className='header__right--menu__expand--links--text' to='/orders/me' >
                     Orders

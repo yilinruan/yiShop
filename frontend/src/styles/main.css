@@ -2047,3 +2047,77 @@ body {
         font-size: 1.4rem;
         padding-top: 1.5rem;
         padding-left: 0.5rem; }
+
+.dashboard {
+  display: flex;
+  padding-top: 14rem;
+  min-height: 88vh; }
+  .dashboard .sidenav {
+    height: 100%;
+    width: 30rem;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px; }
+  .dashboard--sidebar {
+    height: 80%;
+    width: 20rem;
+    background-color: #080000; }
+    .dashboard--sidebar__page {
+      height: 100%; }
+      .dashboard--sidebar__page--dropdown {
+        width: 100%;
+        background-color: #0f0f0f; }
+        .dashboard--sidebar__page--dropdown__btn {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 5rem;
+          font-size: 2rem;
+          text-align: center;
+          color: #f7f7f7;
+          text-decoration: none !important;
+          border-top: 0.1rem solid white;
+          border-bottom: 0.1rem solid white; }
+          .dashboard--sidebar__page--dropdown__btn:hover {
+            color: #55e402;
+            background-color: #2b2929;
+            text-decoration: none !important; }
+      .dashboard--sidebar__page--block {
+        height: 7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 2.5rem;
+        text-decoration: none !important;
+        border-top: 0.2rem solid white;
+        border-bottom: 0.2rem solid white; }
+        .dashboard--sidebar__page--block__item {
+          color: #f7f7f7;
+          text-decoration: none !important; }
+          .dashboard--sidebar__page--block__item:hover {
+            color: white;
+            text-decoration: none !important; }
+        .dashboard--sidebar__page--block:hover {
+          background-color: #444444;
+          text-decoration: none !important; }
+  .dashboard--container {
+    padding-left: 5rem;
+    width: 70%; }
+    .dashboard--container__block {
+      padding-bottom: 1rem; }
+      .dashboard--container__block--content {
+        font-size: 4.5rem; }
+    .dashboard--container__table {
+      background-color: rgba(8, 4, 247, 0.6);
+      border-radius: 0.5rem;
+      height: 15rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center; }
+      .dashboard--container__table--content {
+        font-size: 3rem;
+        color: white; }

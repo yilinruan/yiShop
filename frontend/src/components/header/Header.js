@@ -5,7 +5,7 @@ import HeaderCenter from './HeaderCenter'
 
 const Header = () => {
 
-    return (
+    return ( 
         <Fragment>
             <div className='header'>
                 <HeaderLeft />

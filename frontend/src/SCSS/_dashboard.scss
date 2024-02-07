@@ -1,0 +1,112 @@
+@import "./variables";
+
+.dashboard {
+    display: flex;
+    padding-top: 14rem;
+    min-height: 88vh;
+    // width: 50%;
+    // margin: 0 auto;
+
+    .sidenav {
+        height: 100%;
+        width: 30rem;
+
+        // z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+
+    &--sidebar {
+        // position: absolute;
+        height: 80%;
+        width: 20rem;
+        background-color: rgba(rgb(8, 0, 0), 1);
+
+        &__page {
+            height: 100%;
+
+            &--dropdown {
+                width: 100%;
+
+                &__btn {
+                    // padding-left: 13rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 5rem;
+                    font-size: 2rem;
+                    text-align: center;
+                    color: $color-grey-light;
+                    text-decoration: none !important;
+                    border-top: 0.1rem solid white;;
+                    border-bottom: 0.1rem solid white;;
+
+                    &:hover {
+                        color: rgb(85, 228, 2);
+                        background-color: rgba(rgb(43, 41, 41), 1);
+                        text-decoration: none !important;
+                    }
+                }
+
+                background-color: rgba(rgb(15, 15, 15), 1);
+      
+            }
+
+            &--block {
+                height: 7rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                font-size: 2.5rem;
+                text-decoration: none !important;
+                border-top: 0.2rem solid white;;
+                border-bottom: 0.2rem solid white;;
+                &__item {
+                    color: $color-grey-light;
+                    text-decoration: none !important;
+                    &:hover {
+                        color: white;
+                        text-decoration: none !important;
+                    }
+                }
+
+                &:hover {
+                    background-color: rgba(rgb(68, 68, 68), 1);
+                    text-decoration: none !important;
+                }
+            }
+        }
+    }
+
+    &--container {
+        // background-color: rgb(205, 205, 252);
+        padding-left: 5rem;
+        width: 70%;
+
+        &__block {
+            padding-bottom: 1rem;
+            &--content {
+                font-size: 4.5rem;
+            }
+        }
+        &__table {
+            background-color: rgba(rgb(8, 4, 247), 0.6);
+            border-radius: 0.5rem;
+            height: 15rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            &--content {
+                font-size: 3rem;
+                color: white;
+            }
+        }
+    }
+}
