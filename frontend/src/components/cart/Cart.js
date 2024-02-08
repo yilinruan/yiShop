@@ -61,7 +61,7 @@ const Cart = ({history}) => {
                                 </div>
                                 <div className='cart--body__left--myCart'>
 
-                                    {cartItems.map(item => (
+                                    {cartItems && cartItems.map(item => (
                                         <Fragment key={item.product}>
                                             <div className='cart--body__left--myCart__items' >
 

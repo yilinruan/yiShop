@@ -89,7 +89,7 @@ const Shop = ({ match }) => {
 
                                         <div className="shop--top--price_range--category">
                                             <ul className="shop--top--price_range--category__container">
-                                                {categories.map(category => (
+                                                {categories && categories.map(category => (
                                                     <li className="shop--top--price_range--category__item" key={category} onClick={() => setCategory(category)} >
                                                         {category} 
                                                     </li>
@@ -117,7 +117,7 @@ const Shop = ({ match }) => {
                                 </div>
 
                                 <div className="shop--container">
-                                    {products.map(product => (
+                                    {products && products.map(product => (
                                         <Product key={product._id} product={product} />
                                     ))}
                                 </div>
@@ -127,7 +127,7 @@ const Shop = ({ match }) => {
 
                             <Fragment>
                                 <div className="shop--container">
-                                    {products.map(product => (
+                                    {products && products.map(product => (
                                         <Product key={product._id} product={product} />
                                     ))}
                                 </div>

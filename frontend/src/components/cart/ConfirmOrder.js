@@ -69,7 +69,7 @@ const ConfirmOrder = ({ history }) => {
                         </div>
                         <div className='confirm_order--body__left--myCart'>
 
-                            {cartItems.map(item => (
+                            {cartItems && cartItems.map(item => (
                                 <Fragment key={item.product}>
                                     <div className='confirm_order--body__left--myCart__items' >
 

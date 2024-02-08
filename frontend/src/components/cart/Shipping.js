@@ -104,7 +104,7 @@ const Shipping = ({ history }) => {
                                 required
                             >
 
-                                {countriesList.map(country => (
+                                {countriesList && countriesList.map(country => (
                                     <option key={country.name} value={country.name}>
                                         {country.name}
                                     </option>
