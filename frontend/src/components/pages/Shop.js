@@ -14,8 +14,6 @@ const { createSliderWithTooltip } = Slider;
 const Range = createSliderWithTooltip(Slider.Range)
 
 const Shop = ({ match }) => {
-
-
     const [currentPage, setCurrentPage] = useState(1)
     const [price, setPrice] = useState([1, 1000])
     const [category, setCategory] = useState('')
@@ -136,7 +134,6 @@ const Shop = ({ match }) => {
 
                     </div>
 
-
                     {resPerPage <= count && (
                         <div className="shop--pagination">
                             <Pagination
@@ -153,10 +150,6 @@ const Shop = ({ match }) => {
                             />
                         </div>
                     )}
-
-
-
-
                 </Fragment>
             )}
 
